@@ -16,6 +16,7 @@ class City extends Migration
         Schema::create('city', function (Blueprint $table) {
             $table->id();
             $table->string('label')->unique();
+            $table->string('label')->unique();
         });
     }
 

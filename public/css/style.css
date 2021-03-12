@@ -558,7 +558,7 @@ div[class*="col-xs-"], div[class*="col-sm-"], div[class*="col-md-"], div[class*=
 /* === Content === */
 .main-content
 {
-    background: #fff;
+  /* background: #fff;*/
     margin: 0 2em 2em;
     padding: 3em 2em;
 }
@@ -1818,3 +1818,20 @@ ul.social-icons
         text-transform: uppercase
     }
 }
+
+.b
+    {
+      
+        display: block;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 3px ;
+        height: auto;
+       
+    }
+
+.b ul li {
+    text-align: center;
+}
+
+ 

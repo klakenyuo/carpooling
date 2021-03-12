@@ -21,6 +21,10 @@ Route::get('/rides', function () {
     return view('rides');
 });
 
+Route::get('/n', function () {
+    return view('myrides');
+});
+
 Route::get('/submit', function () {
     return view('submit');
 });
@@ -32,3 +36,4 @@ Route::get('/blog', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
