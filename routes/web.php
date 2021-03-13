@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use  App\Http\Controllers\RidesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,13 +17,15 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/rides', function () {
+Route::get('/s_rides', function () {
     return view('rides');
 });
 
-Route::get('/n', function () {
-    return view('myrides');
-});
+Route::get('/p_rides', [RidesController::class, 'get']);
+Route::get('/rides', [RidesController::class, 'get'])->name('rides.create');
+Route::post('/rides', [RidesController::class, 'post'])->name('rides.store');
+Route::get('/rides_liste', [RidesController::class, 'liste'])->name('rides.liste');
+
 
 Route::get('/submit', function () {
     return view('submit');
@@ -35,5 +37,15 @@ Route::get('/blog', function () {
 
 Route::get('/contact', function () {
     return view('contact');
+});
+
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+
+Route::get('/signup', function () {
+    return view('signup');
 });
 

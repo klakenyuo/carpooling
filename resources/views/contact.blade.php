@@ -5,6 +5,7 @@
 	@endsection
 
 	@section('content')
+	<section class="main-content">
 	<div class="container">
                 <div class="row">
 
@@ -18,5 +19,6 @@
                     </div><!-- end .col-md-12 col-sm-12 col-xs-12 -->
 				</div>
 			</div>
+</section>
 
 	@endsection

@@ -53,7 +53,7 @@
                     <div class="row">
 
                         <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="user-log">
+                          <!--  <div class="user-log">
 
                                 <a data-toggle="modal" data-target="#loginModal">
                                     Log in
@@ -62,7 +62,7 @@
                                     Sign up
                                 </a>
 
-                            </div><!-- end .user-log -->
+                            </div> end .user-log -->
                         </div><!-- end .col-sm-4 -->
 
                         <div class="col-md-8 col-sm-8 col-xs-12">
@@ -109,7 +109,8 @@
                                         <div class="col-md-4 col-sm-12 col-xs-12">
 
                                             <div class="logo">
-                                                <h1>My ride</h1>
+                                            
+                                                <h1><a style="color:white" href="/">My ride</a></h1>
                                             </div><!-- end .logo -->
 
                                         </div><!-- end .col-sm-4 -->
@@ -119,34 +120,15 @@
                                             <nav id="nav" class="main-navigation">
 
                                                 <ul class="navigation">
+                                                     
                                                     <li>
-                                                        <a href="/">Home</a>
+                                                        <a href="/rides_liste">Trouver un Trajet</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/rides">Rides</a>
+                                                        <a href="/p_rides">Proposer un Trajet</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/submit">Submit</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Pages</a>
-                                                        <ul class="sub-menu">
-                                                            <li>
-                                                                <a href="events.html">Events</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="single-post.html">Single post</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="single-article.html">Single article</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <a href="/blog">Blog</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="/contact">Contact</a>
+                                                        <a href="/login">Se Connecter</a>
                                                     </li>
                                                 </ul>
 
@@ -175,12 +157,8 @@
 
 
         <!-- start .main-content -->
-
-        <section class="main-content">
-
-            @yield('content')
-
-        </section>
+        @yield('content')
+      
 
         <!-- end .main-content -->
 

@@ -6,6 +6,9 @@
 
 	@section('content')
 		
+    <section class="main-content">
+
+           
 
 		 <div class="container">
                 <div class="row">
@@ -383,5 +386,5 @@
                 </div><!-- end .row -->
             </div><!-- end .container -->
 
-
+            </section>
 	@endsection

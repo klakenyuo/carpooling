@@ -558,9 +558,8 @@ div[class*="col-xs-"], div[class*="col-sm-"], div[class*="col-md-"], div[class*=
 /* === Content === */
 .main-content
 {
-  /* background: #fff;*/
-    margin: 0 2em 2em;
-    padding: 3em 2em;
+   background: #fff;
+    margin: 0 2em 2em;padding: 3em 2em;
 }
 /* === Page  === */
 .box-fix .ride-pagination
@@ -1825,13 +1824,24 @@ ul.social-icons
         display: block;
         background-color: white;
         border: 1px solid white;
-        border-radius: 3px ;
+        border-radius: 1px ;
         height: auto;
-       
+        box-shadow:  0.5px 0.5px  black;
     }
 
 .b ul li {
     text-align: center;
+  
+}
+.b ul li a{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.nav1 ul{
+    margin: 0px;
+    padding-top: 20px;
 }
 
  

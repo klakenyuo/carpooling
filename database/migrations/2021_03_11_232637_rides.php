@@ -13,7 +13,19 @@ class Rides extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('rides', function (Blueprint $table) {
+            $table->increments('id');
+          /*  $table->strn('city_from_id');
+            $table->integer('city_to_id');
+            $table->integer('owner_id');
+            $table->date('date');
+            $table->string('hour');*/
+            $table->string('from');
+            $table->string('to');
+            $table->string('by');
+            $table->string('date');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +35,6 @@ class Rides extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('rides');
     }
 }
